@@ -1,4 +1,4 @@
-import keyboard, time, subprocess
+import time, subprocess
 import pandas as pd
 from datetime import datetime, date
 import os
@@ -20,7 +20,7 @@ while True:
         os.startfile(f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome')
         time.sleep(60)
       elif "Linux" in platform.system():
-        os.startfile(f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome')
+        subprocess.call(["xdg-open", f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome'])
         time.sleep(60)
       elif "Darwin" in platform.system():
         subprocess.run(["open", f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome'])
