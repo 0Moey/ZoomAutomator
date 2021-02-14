@@ -3,6 +3,8 @@ import pandas as pd
 from datetime import datetime, date
 import os
 import subprocess
+import platform
+
 
 while True:
   cached_day = date.today().weekday()
@@ -14,8 +16,15 @@ while True:
       index = current_csv.Time.values.tolist().index(timestr)
       ID = current_csv.ID.values[index]
       PASS = current_csv.Pass.values[index]
-      os.startfile(f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome')
-      time.sleep(60)
+      if "Win" in platform.system():
+        os.startfile(f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome')
+        time.sleep(60)
+      elif "Linux" in platform.system():
+        os.startfile(f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome')
+        time.sleep(60)
+      elif "Darwin" in platform.system():
+        subprocess.run(["open", f'zoommtg://zoom.us/join?confno={ID}&pwd={PASS}&zc=0&browser=chrome'])
+        time.sleep(60)
     else:
       time.sleep(1)
   time.sleep(1)
