@@ -1,4 +1,4 @@
-# Zoom Automation
+# Zoom Automator
 A python script that automatically joins a zoom meeting based on your timetable.
 
 <ol>
