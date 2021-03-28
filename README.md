@@ -2,29 +2,27 @@
 A python script that automatically joins a zoom meeting based on your timetable.
 
 <ol>
-<li>Checks the "timings.xlsx" file to look for meetings that are going to start.</li>
-<li>As soon as the current time matches any meeting time it opens the Zoom Desktop application.</li>
-<li>Navigates the cursor automatically to various steps to join the meeting.</li>
-<li>The meeting ID and passcode are extracted from "timings.xlsx" and entered into the Zoom app automatically.</li>
+<li>Checks the Time</li>
+<li>Then finds the time in the current CSV file being used</li>
+<li>As soon as the current time matches any meeting time it opens the Zoom Desktop application. The meeting ID and password are Fstringed into the launch, so you don't have to type anything</li>
 </ol>
 
 ## Prerequisites
 
 <ol>
 <li>Zoom app must be installed in your system.</li>
-<li>Meeting time for the day along with Meeting ID and passcode must be entered manually into the "timings.xlsx"</li>
-  <li>python, pandas</li>
+<li>You need to map the days of the week to the CSV file you want it to read on that corresponding day in "map.csv"</li>
+<li>Meeting time for the day along with Meeting ID and passcode must be </li>
+<li>python, pandas</li>
+<li>Setup an automated task to keep the program running 24/7</li>
 </ol>
 
-## Behind the scenes
+##
 
 <ol>
-<li>An infinite loop keeps checking the current time of the system using "datetime.now" funtion.</li>
-<li>The zoom app is opened using "os.startfile()" funtion as soon as current time matches the time mentioned in "timings.xlsx".</li>
-<li>"pyautogui.locateOnScreen()" function locates the image of join button on the screen and returns the position.</li>
-<li>"pyautogui.moveTo()" moves the cursor to that location.</li>
-<li>"pyautogui.click()" performs a click operation.</li>
-<li>The meeting Id and Passcode are entered using the "pyautogui.write()" command.</li>
+<li>Windows Tutorial: .</li>
+<li>Linux Tutorial: </li>
+<li>Mac Tutorial: </li>
 </ol>
 
 If this helped you please drop a star ⭐
@@ -32,5 +30,5 @@ If this helped you please drop a star ⭐
 
 ## License & Copyright
 
-© 2020 <b>Sunil Aleti</b><br>
-Licensed under <a href="https://github.com/aletisunil/Automating_Zoom/blob/master/LICENSE">MIT License</a>
+© 2021 <b>Mohammad Jassim</b><br>
+Licensed under <a href="https://github.com/thetottyapple/ZoomAutomator/blob/master/LICENSE">MIT License</a>
