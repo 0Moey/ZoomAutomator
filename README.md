@@ -19,11 +19,6 @@ A python script that automatically joins a zoom meeting based on your timetable.
 
 ##
 
-<ol>
-<li>Windows Tutorial: .</li>
-<li>Linux Tutorial: </li>
-<li>Mac Tutorial: </li>
-</ol>
 
 If this helped you please drop a star ⭐
 
