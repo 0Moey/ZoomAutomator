@@ -1,3 +1,8 @@
+- ⛔️ DEPRECATED ⛔️
+
+## A small project that helped me learn python! it probably still works but I have no future use nor intentions to update it.
+
+
 # Zoom Automator
 A python script that automatically joins a zoom meeting based on your timetable.
 
